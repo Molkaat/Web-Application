@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<books>
+  <book>
+    <title>The Great Gatsby</title>
+    <author>F. Scott Fitzgerald</author>
+    <genre>Classic</genre>
+    <isbn>9780743273565</isbn>
+    <publication_date>2004-09-30</publication_date>
+  </book>
+  <book>
+    <title>To Kill a Mockingbird</title>
+    <author>Harper Lee</author>
+    <genre>Classic</genre>
+    <isbn>9780060935467</isbn>
+    <publication_date>2002-05-23</publication_date>
+  </book>
+  <book>
+    <title>1984</title>
+    <author>George Orwell</author>
+    <genre>Dystopian</genre>
+    <isbn>9780451524935</isbn>
+    <publication_date>2003-10-21</publication_date>
+  </book>
+  <book>
+    <title>The Catcher in the Rye</title>
+    <author>J.D. Salinger</author>
+    <genre>Classic</genre>
+    <isbn>9780316769488</isbn>
+    <publication_date>1991-05-01</publication_date>
+  </book>
+  <book>
+    <title>The Hitchhiker's Guide to the Galaxy</title>
+    <author>Douglas Adams</author>
+    <genre>Science Fiction</genre>
+    <isbn>9780345391803</isbn>
+    <publication_date>1995-04-26</publication_date>
+  </book>
+  <book>
+    <title>The Lord of the Rings</title>
+    <author>J.R.R. Tolkien</author>
+    <genre>Fantasy</genre>
+    <isbn>9780544003415</isbn>
+    <publication_date>2012-09-18</publication_date>
+  </book>
+  <book>
+    <title>The Selfish Gene</title>
+    <author>Richard Dawkins</author>
+    <genre>Science</genre>
+    <isbn>9780199291151</isbn>
+    <publication_date>2006-12-21</publication_date>
+  </book>
+  <book>
+    <title>The Structure of Scientific Revolutions</title>
+    <author>Thomas Kuhn</author>
+    <genre>Science</genre>
+    <isbn>9780226458120</isbn>
+    <publication_date>2012-04-18</publication_date>
+  </book>
+  <book>
+    <title>The Singularity is Near</title>
+    <author>Ray Kurzweil</author>
+    <genre>Science</genre>
+    <isbn>9780143037880</isbn>
+    <publication_date>2006-09-26</publication_date>
+  </book>
+<book><title>yyy</title><author>yyy</author><genre>Horror</genre><isbn>16</isbn><publication_date>12</publication_date></book><book><title>uuu</title><author>uuuuu</author><genre>Romance</genre><isbn>uuuu</isbn><publication_date>22222</publication_date></book></books>

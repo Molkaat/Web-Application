@@ -1,0 +1,172 @@
+body {
+    background-image: url("https://images.unsplash.com/photo-1519327232521-1ea2c736d34d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+
+}
+
+/* Center the search bar */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+/* Style the search bar */
+.search-container input[type=text] {
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    width: 20%;
+    background-color: #cebdaf;
+    font-family: Georgia, sans-serif;
+
+}
+
+/* Style the search button */
+.search-container button {
+    float: right;
+    width: 9%;
+    height: 40%;
+    background: #3a220a;
+    color: rgb(220, 194, 194);
+    border-radius: 0 5px 5px 0;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: Georgia, sans-serif;
+
+}
+
+
+
+header {
+    background-color: rgba(137, 87, 52, 0.7);
+    color: #312323;
+    padding: 10px 20px;
+    font-weight: bold;
+
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    background-color: rgba(137, 87, 52, 0.7);
+    padding: 1px 20px;
+    text-align: left;
+
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: right;
+    /* align the links to the right */
+}
+
+li {
+    float: none;
+    display: inline-block;
+}
+
+li a {
+    display: block;
+    color: #3a220a;
+    text-align: center;
+    padding: 1px 8px;
+    text-decoration: none;
+}
+
+#book-info {
+    border: 0px solid rgb(219, 153, 153);
+    padding: 10px;
+    text-align: left;
+    margin: auto;
+    /* center horizontally */
+
+    margin-top: 20px;
+    background-color: rgba(137, 87, 52, 0.7);
+    /* set the background color to transparent black */
+    width: 200px;
+    height: 150px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+#book-info h1 {
+    font-family: "Georgia", sans-serif;
+    font-size: 28px;
+    color: rgb(8, 8, 8);
+    text-shadow: 1px 1px #000;
+    margin-bottom: 20px;
+    font-weight: bold;
+    /* add bold font weight */
+}
+
+#book-info p {
+    font-family: "Georgia", sans-serif;
+    font-size: 15px;
+    color: #070707;
+    line-height: 1;
+    font-weight: bold;
+    /* add bold font weight */
+}
+
+
+
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: auto;
+    /* center the table */
+    font-family: Georgia, sans-serif;
+    font-size: 14px;
+    background-color: rgba(137, 87, 52, 0.7);
+    /* add a light gray background color */
+    margin-bottom: 100px;
+    /* add some margin to the bottom */
+
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    /* change 'centre' to 'center' */
+    border-bottom: 1px solid rgba(137, 87, 52, 0.7);
+    font-family: Georgia, sans-serif;
+}
+
+th {
+    background-color: rgba(137, 87, 52, 0.7);
+    color: #090909;
+    ;
+    border-bottom: 1px solid rgba(137, 87, 52, 0.7);
+    font-family: Georgia, sans-serif;
+    text-align: center;
+}
+
+/* add alternating row colors */
+tr:nth-child(even) {
+    background-color: rgba(137, 87, 52, 0.7);
+}
+
+h2 {
+    border: none;
+    text-align: center;
+    color: #070707;
+    margin-top: 40px;
+
+
+}

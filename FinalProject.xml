@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FinalProjects>
+    <finalProject>
+        <title>Conception et réalisation d'un système de gestion de bibliothèque</title>
+        <name>John Doe</name>
+        <year>2022</year>
+        <password>abcd</password>
+    </finalProject>
+    <finalProject>
+        <title>Développement d'un site web de vente en ligne</title>
+        <name>Jane Smith</name>
+        <year>2021</year>
+        <password>abcd</password>
+    </finalProject>
+    <finalProject>
+        <title>Étude de l'impact de l'intelligence artificielle sur l'emploi</title>
+        <name>Maxime Dupont</name>
+        <year>2023</year>
+        <password>abcd</password>
+    </finalProject>
+<book><title>prepa</title><name>molka</name><year>2020</year><password>pass</password></book></FinalProjects>

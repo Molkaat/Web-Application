@@ -1,0 +1,105 @@
+body {
+    background-image: url("https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-position: 0 0px; /* adjust the value to your preference */
+  
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    font-family: Georgia, serif;
+}
+
+header {
+    background-color: rgba(204, 161, 130, 0.7);
+    color:  rgb(56, 45, 37);
+    padding: 40px;
+}
+
+h1 {
+    margin: 0;
+    font-family: Georgia, serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    font-family: Georgia, serif;
+}
+
+nav ul li a {
+    color: rgb(64, 52, 42);
+    text-decoration: none;
+    padding: 1px 8px;
+    display: block;
+    font-family: Georgia, serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    font-family: Georgia, serif;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: Georgia, serif;
+
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    max-width: 500px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: rgba(204, 161, 130, 0.7);;
+    color: #fff;
+    border: none;
+    padding: 10px 14px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    font-family: Georgia, serif;
+    border-radius: 40px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+    font-family: Georgia, serif;
+
+  }
+  .box-content {
+    padding: 200000px;
+    font-size: 14px; /* Add this line to set the font size to 14 pixels */
+  }
+  
+  
+ 
+  
+
+footer {
+    background-color: rgba(204, 161, 130, 0.7);
+    color: #333;
+    text-align: center;
+    padding: 2px 10px; /* top and bottom padding set to 10px, left and right padding adjusted as needed */
+    font-size: 0.8em;
+    border: 1px solid rgba(204, 161, 130, 0.7);
+    border-radius: 10px;
+}

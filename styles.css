@@ -1,0 +1,137 @@
+body {
+  background-image: url("https://wallpaperaccess.com/full/5487841.jpg");
+  background-size: cover;
+  background-position: center top;
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: right;
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  display: block;
+  color: rgb(205, 172, 172);
+  text-align: center;
+  padding: 1px 8px;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Georgia", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:rgb(224, 189, 151);
+}
+
+h1 {
+  font-family: "Georgia", sans-serif;
+  font-size: 40px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: rgb(224, 189, 151);
+}
+
+form {
+  width: 20%;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: rgba(173, 125, 104, 0.895);
+  border-radius: 5px;
+  box-shadow: 1 2px 5px rgba(250, 181, 42, 0.3);
+}
+
+label {
+  font-family: "Georgia", sans-serif;
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: rgba(59, 39, 31, 0.895);
+}
+
+
+
+input[type="text"],
+input[type="date"] {
+  font-family: "Georgia", sans-serif;
+  display: block;
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+
+.buttonStyle {
+  font-family: "Georgia", sans-serif;
+  display: block;
+  width: 46%;
+  padding: 5px;
+  font-size: 15px;
+  color: #fff;
+  background-color: #432a28;;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.buttonStyle:hover {
+
+  background-color: #432a28;;
+}
+
+.buttonStyle:focus {
+
+  outline: none;
+}
+
+
+.cancelButton {
+  font-family: "Georgia", sans-serif;
+  width: 50%;
+  padding: 5px;
+  font-size: 15px;
+  color: #fff;
+  background-color: #432a28;;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 20px;
+
+}
+
+.cancelButton:hover {
+  background-color: #432a28;
+}
+
+.cancelButton:focus {
+  outline: none;
+}
+
+#error-msg {
+  font-family: "Georgia", sans-serif;
+  display: none;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f44336;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 3px;
+  text-align: center;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Search Final Project</title>
+  <link rel="stylesheet" type="text/css" href="Sbooks.css">
+
+</head>
+
+<body>
+
+  <header>
+    <ul>
+      <li><a href="Acceuil.html">Home</a></li>
+      <li><a href="http://localhost/projectR/addpfe.ph">Final Project</a></li>
+    </ul>
+    <h1>VIP library</h1>
+
+    <div class="search-container">
+      <input type="text" id="book-title" placeholder="Enter the Project title">
+      <button id="search-btn">Search</button>
+    </div>
+  </header>
+
+
+  <div id="book-info"></div>
+
+  <h2>Final Project Options</h2>
+
+  <table id="book-table">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Name</th>
+        <th>Year</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+  <script>
+
+    // Load the XML file
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        // Parse the XML data
+        var xmlDoc = this.responseXML;
+        var FinalProjects = xmlDoc.getElementsByTagName("finalProject");
+        var tableBody = document.getElementById("book-table").getElementsByTagName("tbody")[0];
+        // Generate the table rows dynamically
+        for (var i = 0; i < FinalProjects.length; i++) {
+          var finalProject = FinalProjects[i];
+          var title = finalProject.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+          var name = finalProject.getElementsByTagName("name")[0].childNodes[0].nodeValue;
+          var year = finalProject.getElementsByTagName("year")[0].childNodes[0].nodeValue;
+          var row = tableBody.insertRow(i);
+          row.insertCell(0).innerHTML = title;
+          row.insertCell(1).innerHTML = name;
+          row.insertCell(2).innerHTML = year;
+        }
+      }
+    };
+    xhttp.open("GET", "FinalProject.xml", true);
+    xhttp.send();
+  </script>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script>
+    const searchBtn = document.getElementById('search-btn');
+    const FinalProjectTitleInput = document.getElementById('book-title');
+    const FinalProjectInfoDiv = document.getElementById('book-info');
+  
+    searchBtn.addEventListener('click', searchFinalProject);
+    FinalProjectTitleInput.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') {
+        searchFinalProject();
+      }
+    });
+  
+    function searchFinalProject() {
+      const FinalProjectTitle = FinalProjectTitleInput.value.trim();
+  
+      if (FinalProjectTitle !== '') {
+        const xhr = new XMLHttpRequest();
+  
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            const xmlDoc = xhr.responseXML;
+            const FinalProjectNodes = xmlDoc.getElementsByTagName('finalProject');
+            let foundFinalProject = null;
+  
+            for (let i = 0; i < FinalProjectNodes.length; i++) {
+              const title = FinalProjectNodes[i].getElementsByTagName('title')[0].textContent;
+              if (title.toLowerCase() === FinalProjectTitle.toLowerCase()) {
+                foundFinalProject = FinalProjectNodes[i];
+                break;
+              }
+            }
+  
+            if (foundFinalProject !== null) {
+              const title = foundFinalProject.getElementsByTagName('title')[0].textContent;
+              const name = foundFinalProject.getElementsByTagName('name')[0].textContent;
+              const year = foundFinalProject.getElementsByTagName('year')[0].textContent;
+              FinalProjectInfoDiv.innerHTML = `<p>Title: ${title}</p>
+                                             <p>Name: ${name}</p>
+                                             <p>Year: ${year}</p> `;
+            } else {
+              FinalProjectInfoDiv.innerHTML = 'Project not found.';
+            }
+          }
+        };
+  
+        xhr.open('GET', 'FinalProject.xml', true);
+        xhr.send();
+      }
+    }
+  </script>
+  
+</body>
+
+<footer class="footer">
+  <div class="container">
+    <p>© 2023 VIP Library</p>
+  </div>
+</footer>
+
+</html>
