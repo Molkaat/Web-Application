@@ -9,3 +9,4 @@ To elevate the user experience further, I employed JavaScript to implement an in
 Building upon this solid foundation, I extended the same functionality to the 'Add Final Project' and 'Search Final Project' pages, showcasing the project's scalability and adaptability.
 
 VIP Library epitomizes my proficiency in HTML, CSS, PHP, and JavaScript, highlighting my ability to create engaging and sophisticated web applications. Through this project, I have honed my skills in front-end design, back-end processing, and seamless integration of multiple technologies.
+![VIP library](https://github.com/Molkaat/Web-Application/assets/121430146/270b5e24-0891-4de8-9e08-5a723061d4e9)
